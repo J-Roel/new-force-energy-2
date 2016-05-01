@@ -1,0 +1,115 @@
+gimp imp
+
+
+
+
+
+
+apco-flop
+
+
+
+<img class="alignleft wp-image-158 size-thumbnail" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/02/Screen-Shot-2016-02-29-at-2.03.34-PM-150x150.png" alt="Screen Shot 2016-02-29 at 2.03.34 PM" width="150" height="150" /> <img class="alignleft wp-image-156 size-thumbnail" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/02/Screen-Shot-2016-02-29-at-2.10.55-PM-150x150.png" alt="Screen Shot 2016-02-29 at 2.10.55 PM" width="150" height="150" /> <img class="alignleft wp-image-155 size-thumbnail" src="http://www.jeremyroelfs.com/blog/wp-content/uploads/2016/02/Screen-Shot-2016-02-29-at-2.09.31-PM-150x150.png" alt="Screen Shot 2016-02-29 at 2.09.31 PM" width="150" height="150" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="entry-content clearfix">
+			<?php the_content(); ?>
+			<!-- <?php trackback_rdf(); ?> -->
+			<div class="page-links"><?php wp_link_pages(); ?></div>
+		</div><!-- .entry-content -->
+
+
+
+<div class="entry-content entry-excerpt clearfix">
+				
+				<?php the_excerpt(); ?>
+				
+			</div><!-- .entry-content -->
+
+
+
+
+
+
+
+
+
+&nbsp;
+
+
+
+
+
+
+
+
+TIMER - (<a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/setInterval">source</a>)
+<pre class="brush:html line-numbers language-html"><code class=" language-html"><span class="token script language-javascript"> <span class="token keyword">var</span> nIntervId<span class="token punctuation">;</span>
+ 
+    <span class="token keyword">function</span> <span class="token function">changeColor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      nIntervId <span class="token operator">=</span> <span class="token function">setInterval</span><span class="token punctuation">(</span>flashText<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+ 
+    <span class="token keyword">function</span> <span class="token function">flashText</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">var</span> oElem <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"my_box"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      oElem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>color <span class="token operator">=</span> oElem<span class="token punctuation">.</span>style<span class="token punctuation">.</span>color <span class="token operator">==</span> <span class="token string">"red"</span> <span class="token operator">?</span> <span class="token string">"blue"</span> <span class="token punctuation">:</span> <span class="token string">"red"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+ 
+    <span class="token keyword">function</span> <span class="token function">stopTextColor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token function">clearInterval</span><span class="token punctuation">(</span>nIntervId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span></span></code></pre>
+
+
+
+
+
+
+    <div class="header-main container clearfix">
+						
+				<div id="logo" class="site-branding clearfix">
+				
+					<?php tortuga_site_logo(); ?>
+					<?php tortuga_site_title(); ?>
+				
+				</div><!-- .site-branding -->
+				
+				<div class="header-widgets clearfix">
+					
+					<?php // Display Header Widgets
+					if( is_active_sidebar( 'header' ) ) : 
+			
+						dynamic_sidebar( 'header' );
+						
+					endif; ?>
+					
+				</div><!-- .header-widgets -->
+			
+			</div><!-- .header-main -->
+
+
+
+
+			<div id="footer-text" class="site-info">
+				<?php do_action( 'tortuga_footer_text' ); ?>
+			</div><!-- .site-info -->
