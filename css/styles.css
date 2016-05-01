@@ -29,7 +29,7 @@ code {
     font-weight: bolder; }
 
 /*--------------------------*/
-/* Structure#				 */
+/* #Structure#				*/
 /*--------------------------*/
 html, body {
   padding: 0;
@@ -91,7 +91,7 @@ cd-hero-slider .cd-btn {
   background-image: url("../assets/slideshow/shakehands.png"); }
 
 /*-----------------------
-		#SECTIONS
+		#SECTIONS#
 -------------------------*/
 /* ---------------EVENTS----------------*/
 #page-header {
@@ -99,7 +99,7 @@ cd-hero-slider .cd-btn {
   margin: 0; }
 
 #top {
-  min-height: 80vh;
+  min-height: 650px;
   width: 100%;
   box-shadow: 7px 0 9px -4px rgba(0, 0, 0, 0.1), -7px 0 7px -4px rgba(0, 0, 0, 0.1); }
   #top .overlay {
@@ -124,120 +124,106 @@ section.module.parallax-1 {
   background-image: url("../assets/images/rig/main-wide.jpg");
   background-position: cover; }
 
-#services {
-  min-height: 900px;
+#services1, #services2 {
+  min-height: 450px;
   height: 100%;
   width: 100%;
   background: #D3D5D9; }
-  #services .overlay {
+  #services1 .overlay, #services2 .overlay {
     min-height: 100%;
     width: 100%;
     min-width: 100%;
     margin: 0;
     position: relative;
     /*set this to relative for triangles*/ }
-  #services .box-one {
+  #services1 .text-box, #services2 .text-box {
+    padding: 15%; }
+    #services1 .text-box h3, #services2 .text-box h3 {
+      padding: 2em 0 2em 0; }
+    #services1 .text-box h3:before, #services1 .text-box h3:after, #services2 .text-box h3:before, #services2 .text-box h3:after {
+      padding: 10px;
+      font-style: normal;
+      content: "|"; }
+  #services1 .pic-one, #services2 .pic-one {
+    background: linear-gradient(rgba(119, 125, 135, 0.4), rgba(119, 125, 135, 0.4)), url("../assets/images/rig/standing-tall.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.4);
     position: absolute;
-    padding: 20px;
-    margin: 0;
-    left: 225px;
-    top: -100px;
-    width: 400px;
-    height: 500px;
-    background: #D3D5D9; }
-  #services .box-two {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 625px;
-    top: -50px;
-    width: 300px;
-    height: 300px;
-    background: black;
-    background-image: url("../assets/images/rig/looking-up.jpg");
-    background-size: contain;
-    background-repeat: no-repeat; }
-  #services .box-three {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 625px;
-    top: 250px;
-    width: 450px;
-    height: 475px;
-    background-image: url("../assets/images/rig/standing-tall.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: 10; }
-  #services .box-four {
-    position: absolute;
-    padding: 0;
-    margin: 0;
+    width: 500px;
+    height: 600px;
+    top: -70px;
     left: 0;
-    top: 300px;
-    width: 625px;
-    height: 425px;
-    background-image: url("../assets/images/rig/coil-on-top.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: 10; }
-  #services .box-five {
+    z-index: 2; }
+  #services1 .pic-one:hover, #services2 .pic-one:hover {
+    /*outline: 8px solid rgba(0,0,0,0.4);*/ }
+  #services1 .pic-two, #services2 .pic-two {
+    background: linear-gradient(rgba(119, 125, 135, 0.4), rgba(119, 125, 135, 0.4)), url("../assets/images/rig/coil-on-top.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
     position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 75px;
-    top: 725px;
-    width: 275px;
-    height: 275px;
-    background-image: url("../assets/images/rig/bha.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: 10; }
-  #services .box-six {
-    position: absolute;
-    padding: 20px;
-    margin: 0;
-    left: 350px;
-    top: 725px;
-    width: 375px;
-    height: 475px;
-    z-index: 10;
-    background: #D3D5D9; }
-  #services .box-seven {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    left: 725px;
-    top: 725px;
-    width: 325px;
-    height: 325px;
-    background-image: url("../assets/images/rig/coils.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: 10; }
-  #services .learn-more {
-    position: absolute;
-    bottom: 2%;
-    right: 5%;
-    color: #1B1C1F;
-    text-decoration: underline; }
+    width: 500px;
+    height: 600px;
+    top: -70px;
+    right: 0;
+    z-index: 2;
+    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.4);
+    transition: 0.5s; }
+  #services1 .pic-two:hover, #services2 .pic-two:hover {
+    box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.4); }
 
-#about {
-  min-height: 700px;
+#hero-parallax1, #hero-parallax2 {
+  min-height: 350px;
+  height: 350px;
   width: 100%;
   box-shadow: 7px 0 9px -4px rgba(0, 0, 0, 0.1), -7px 0 7px -4px rgba(0, 0, 0, 0.1); }
-  #about .overlay {
-    height: 100vh;
+  #hero-parallax1 .overlay, #hero-parallax2 .overlay {
+    height: inherit;
     width: 100%;
     margin: 0;
     position: relative;
-    /*set this to relative for triangles*/
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 0; }
+    background-color: rgba(119, 125, 135, 0.7); }
 
 section.module.parallax-2 {
-  background-image: url("../assets/images/rig/driller.jpg");
+  background-image: url("../assets/images/rig/standing-tall.jpg");
   background-position: cover; }
+
+section.module.parallax-3 {
+  background-image: url("../assets/images/rig/coil-on-top.jpg");
+  background-position: cover; }
+
+#about {
+  height: 100%;
+  width: 100%;
+  box-shadow: 7px 0 9px -4px rgba(0, 0, 0, 0.1), -7px 0 7px -4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5em; }
+  #about .overlay {
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-color: #D3D5D9; }
+  #about img {
+    width: 100%;
+    padding: 2em;
+    transition: 0.5s; }
+  #about img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05); }
+  #about .text-box {
+    padding: 5%; }
+    #about .text-box h3 {
+      padding: 2em 0 2em 0; }
 
 /* ------------------------------------------------ */
 /*		NAVIGATION NAV#								*/
@@ -571,126 +557,6 @@ nav a, nav a:active, nav a:selected {
 
 .archive i {
   padding: 10px; }
-
-/*--------------------------*/
-/*  SLANTS# */
-/*--------------------------*/
-.slant-very-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  margin: 0;
-  min-height: 0;
-  border-left: none;
-  border-right: 100vw solid #2A4890;
-  border-bottom: 100px solid transparent;
-  padding: 0 0 55px 0;
-  z-index: 10; }
-
-.slant-top-gray {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  margin: 0;
-  border-left: none;
-  border-right: 100vw solid gray;
-  border-bottom: 50px solid transparent;
-  z-index: 200; }
-
-.slant-bottom-gray {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  margin: 0;
-  border-left: 100vw solid gray;
-  border-right: none;
-  border-top: 50px solid transparent;
-  z-index: 200; }
-
-.slant-top-white {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  margin: 0;
-  border-left: none;
-  border-right: 100vw solid gray;
-  border-top: 50px solid transparent;
-  z-index: 200; }
-
-.slant-bottom-white, .slant-bottom-white_top {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  margin: 0;
-  border-left: none;
-  border-right: 100vw solid white;
-  border-top: 50px solid transparent;
-  z-index: 10; }
-
-.slant-bottom-white_top {
-  padding: 75px 0 0 0; }
-
-.triangle-gray-transparent-gray-down {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin: 0;
-  border-left: 50vw solid gray;
-  border-right: 50vw solid gray;
-  border-top: 50px solid transparent;
-  transform: translateX(-50vw);
-  z-index: 200; }
-
-.triangle-white-transparent-white-down {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin: 0;
-  border-left: 50vw solid white;
-  border-right: 50vw solid white;
-  border-top: 50px solid transparent;
-  transform: translateX(-50vw);
-  z-index: 200; }
-
-.triangle-white-transparent-white-up {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin: 0;
-  border-left: 50vw solid white;
-  border-right: 50vw solid white;
-  border-bottom: 50px solid transparent;
-  transform: translateX(-50vw);
-  z-index: 200; }
-
-.triangle-gray-transparent-gray-up {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin: 0;
-  border-left: 50vw solid gray;
-  border-right: 50vw solid gray;
-  border-bottom: 50px solid transparent;
-  transform: translateX(-50vw);
-  z-index: 200; }
 
 /* ------------------------------------------------ */
 /*		EFFECTS										*/

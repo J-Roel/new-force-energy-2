@@ -135,13 +135,13 @@ $( document ).ready(function() {
 	        // $("#drawer-button").css("outline",'5px solid #8E24AA');
 	        // $("#drawer-button").css("background",'#8E24AA');
 	        // $("#header").fadeOut(300);
-          $('#drawer-button').css('left', '95%');
+          $('#drawer-button').css('left', '93%');
 
 
 	    } else {
 	    	// $("#header").fadeIn(300);
 	        // $("#drawer-button").css("outline",'none');
-          $('#drawer-button').css('left', '50%');
+          $('#drawer-button').css('left', '48%');
 	    }
 	});
 
