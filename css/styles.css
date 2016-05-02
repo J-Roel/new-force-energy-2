@@ -95,8 +95,20 @@ cd-hero-slider .cd-btn {
 -------------------------*/
 /* ---------------EVENTS----------------*/
 #page-header {
+  position: relative;
   padding: 100px 0 0 0;
   margin: 0; }
+  #page-header .left {
+    position: absolute;
+    left: 20%;
+    top: 2.5em; }
+  #page-header .right {
+    position: absolute;
+    right: 10%;
+    top: 2.5em; }
+  #page-header h4 {
+    padding: 0;
+    margin: 0 2em 0 2em; }
 
 #top {
   min-height: 650px;
@@ -119,6 +131,14 @@ cd-hero-slider .cd-btn {
     background-image: url("../assets/images/nf-logo.png");
     background-repeat: none;
     background-size: cover; }
+  #top .nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 30px;
+    padding-left: 10%; }
 
 section.module.parallax-1 {
   background-image: url("../assets/images/rig/main-wide.jpg");
@@ -221,16 +241,40 @@ section.module.parallax-3 {
     -o-transform: scale(1.05);
     transform: scale(1.05); }
   #about .text-box {
-    padding: 5%; }
+    padding: 5%;
+    text-align: center; }
     #about .text-box h3 {
       padding: 2em 0 2em 0; }
+    #about .text-box a {
+      display: inline-block; }
+    #about .text-box h4.link {
+      display: inline-block;
+      padding: 0;
+      margin: 0; }
+    #about .text-box h4.link:after, #about .text-box h4.link:before {
+      font-style: normal;
+      content: "|";
+      padding: 10px; }
+
+#rig {
+  min-height: 650px;
+  width: 100%;
+  box-shadow: 7px 0 9px -4px rgba(0, 0, 0, 0.1), -7px 0 7px -4px rgba(0, 0, 0, 0.1); }
+  #rig .overlay {
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    position: relative;
+    /*set this to relative for triangles*/ }
 
 /* ------------------------------------------------ */
 /*		NAVIGATION NAV#								*/
 /* ------------------------------------------------ */
 nav {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  text-align: center; }
 
 nav .logo {
   width: 64px;
@@ -241,7 +285,6 @@ nav .nav-title {
   width: 50%;
   margin: 0;
   color: #fff;
-  font-family: 'Quantico', sans-serif;
   font-size: 1.1em;
   line-height: 50px;
   vertical-align: middle;
@@ -254,19 +297,18 @@ nav .nav-title h1 {
 
 nav .nav-links {
   display: inline-block;
-  width: 50%;
   margin: 0;
   float: right; }
 
 nav a {
   display: inline-block;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1em;
-  line-height: 50px;
+  font-size: 0.8em;
+  line-height: 30px;
   vertical-align: middle;
   color: #fff;
-  padding: 0 15px 0 0;
-  transition: 0.5s; }
+  padding: 0 10em 0 0;
+  transition: 0.5s;
+  text-align: center; }
 
 nav a:hover {
   color: #ccc;
@@ -640,11 +682,30 @@ section.module.parallax:last-child {
   margin-right: auto;
   text-align: center; }
 
+table {
+  font-size: 18px;
+  color: #000; }
+  table thead {
+    padding: 20px;
+    background-color: #2A4890; }
+  table thead th {
+    padding: 4px 0 4px 10px; }
+  table tbody {
+    border: 1px solid #000; }
+    table tbody td {
+      padding: 4px 30px 4px 10px; }
+
 /* ------------------------------------------------ */
 /*		Media Queries								*/
 /* ------------------------------------------------ */
 /* iPhone 6 Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .nav-container {
+    padding-left: 4%; }
+
+  nav a {
+    padding: 0 4em 0 0; }
+
   .section {
     width: 100vw;
     min-width: 100%;
@@ -653,40 +714,13 @@ section.module.parallax:last-child {
     margin: 0;
     background-color: transparent; }
 
-  #lp-newsletter, footer, #lp-mission {
-    height: 20vh; }
-
-  nav .nav-links {
-    display: none;
-    width: 0;
-    height: 0; }
-  nav .nav-title {
-    width: 100%; }
+  #drawer-button {
+    left: 0; }
 
   #drawer .drawer-side {
     width: 100%;
     padding: 60px 0 0 10%; }
   #drawer .screen-side {
     width: 0; } }
-/*============================================
-		FORMS
-==============================================*/
-form {
-  margin: 10px;
-  padding: 0.5%; }
-
-button {
-  font-size: 1em;
-  border-radius: 2%;
-  padding: 5px; }
-
-label {
-  font-size: 1.3em;
-  padding: 0 10px 0 20px; }
-
-input {
-  font-size: 1.3em;
-  padding: 5px;
-  border-radius: 2%; }
 
 /*# sourceMappingURL=styles.css.map */

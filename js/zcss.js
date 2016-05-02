@@ -126,23 +126,13 @@ $( document ).ready(function() {
 	//Make sure header is out when we load the page
   $("#header").fadeOut(10);
 
-  var parallax = document.querySelectorAll(".parallax"),
-     speed = 0.1;
-
+  
 	$(window).on("scroll", function() {
-
-	    if($(window).scrollTop() > 35) {
-	        // $("#drawer-button").css("outline",'5px solid #8E24AA');
-	        // $("#drawer-button").css("background",'#8E24AA');
-	        // $("#header").fadeOut(300);
-          $('#drawer-button').css('left', '93%');
-
-
-	    } else {
-	    	// $("#header").fadeIn(300);
-	        // $("#drawer-button").css("outline",'none');
-          $('#drawer-button').css('left', '48%');
-	    }
+        if($(window).scrollTop() > 35) {
+            $('#drawer-button').css('left', '3%');
+        } else {
+            $('#drawer-button').css('left', '50%');
+        }
 	});
 
 
