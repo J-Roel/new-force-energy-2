@@ -8,8 +8,12 @@
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   
+  
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   
   <!--Font-Awesome-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -25,16 +29,12 @@
 <body>
   <div class="container-fluid">
   <div class="col-xs-12 col-md-10 col-md-offset-1">
-
-
       <!-- Space at top -->
       <div id="page-header">
           <a id="drawer-button"><span></span></a>
       </div>
-
-
       <!-- Top section -->
-      <section id="top" class="section">
+      <section id="top" class="section module parallax parallax-1">
           <div class="overlay">
               <div class="row">
                   <div class="nav-container">
@@ -48,56 +48,113 @@
                   </div>
               </div>
               <div class="row">
-                  <div class="col-xs-6 col-md-6">
-                      <div class="nfc-logo"></div>
-                  </div>
-                  <div class="col-xs-6 col-md-6">
-                      <a href="#rig114"><h4>Rig 114</h4></a>
-                      <a href="#168"><h4>Rig 168</h4></a>
-                  </div>
+                <div class="nfc-logo"></div>
               </div>
           </div>
       </section>
 
 
-      <!-- Services section -->
-      <section id="rig114" class="section">
-          <div class="overlay">
-                <div class="row">
-                      <div class="col-xs-6 col-md-6">
-                          <!-- RIG IMAGE -->
-                          <img src="">
-                      </div>
-                      <div class="col-xs-6 col-md-6">
-                          <!-- RIG TABLE/INFO -->
-                          <table>
-                              <thead>
-                                <tr><th colspan="2">
-                                  Rig 144
-                                </th></tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Drawworks Engine</td>
-                                  <td>CAT C-9 300HP</td>
-                                </tr>
 
-                              </tbody>
 
-                            </table>
-                          
-                      </div>
-                </div>
-          </div>
-      </section>
 
-      <section id="hero-parallax1" class="section module parallax parallax-2">
-      <div class="overlay">
-        <div class="row">
-        </div>
-      </div>
-      </section>
+      <!-- RIG 114 section -->
+      <section id="rig114" class="section rig"><div class="overlay"><div class="row">
+            <div class="col-xs-6 col-md-6">
+              <div id="carousel-rig114" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                  <li data-target="#carousel-rig114" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-rig114" data-slide-to="1"></li>
+                  <li data-target="#carousel-rig114" data-slide-to="2"></li>
+                  </ol>
 
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../assets/images/rig/rig114-1.jpg" alt="Rig 114 - Image 1">
+                        <div class="carousel-caption"><h4>Rig 114</h4></div>
+                    </div>
+                    <div class="item">
+                        <img src="../assets/images/rig/rig114-2.jpg" alt="Rig 114 - Image 2">
+                        <div class="carousel-caption"><h4>Rig 114</h4></div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-6">
+                <table>
+                      <thead><tr><th colspan="2">Rig 114 - Specs</th></tr></thead>
+                        <tbody>
+                        <tr>
+                            <td>Drawworks Engine</td>
+                            <td>CAT C-9 300HP</td>
+                        </tr>
+                        <tr>
+                            <td>Drawworks</td>
+                            <td>100,000# model CTS</td>
+                        </tr>
+                        <tr>
+                            <td>Mast</td>
+                            <td>CTS 100,000# hook load w/4 lines</td>
+                        </tr>
+                        <tr>
+                          <td>Rotary Drive</td>
+                          <td>HACKER 10" 50 TON</td>
+                        </tr>
+                        <tr>
+                          <td>Substructure</td>
+                          <td>Height 12'</td>
+                        </tr>
+                        <tr>
+                          <td>Mud Pump</td>
+                          <td>Gardner Denver PAH 275HP</td>
+                        </tr>
+                        <tr>
+                          <td>Mud Pump Power</td>
+                          <td>CAT C-15 450HP</td>
+                        </tr>
+                        <tr>
+                          <td>Drill Pipe</td>
+                          <td>2-5/8" CT 3,500', 4.9#/ft</td>
+                        </tr>
+                        <tr>
+                          <td>BOP</td>
+                          <td>7-1/16", 3000PSI, Townsend Annular</td>
+                        </tr>
+                        <tr>
+                          <td>Active Mud Tanks</td>
+                          <td>(1) 140BBLS capacity</td>
+                        </tr>
+                        <tr>
+                          <td>AC Generators</td>
+                          <td>CAT Engine 3306 | 300HP, 212 KVA</td>
+                        </tr>
+                        <tr>
+                          <td>Hydraulic Tongs</td>
+                          <td>2-7/8" - 5-1/2" casing</td>
+                        </tr>
+                        </tbody>
+                        <thead><tr><th colspan="2">Rig 114 - Capabilities</th></tr></thead>
+                        <tbody>
+                        <tr>
+                            <td colspan="2">Hole Size 4-3/4" to 6-1/4"</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Depth max 3,700'</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Run Production Casing 2-7/8" to 4-1/2" range 3</td>
+                        </tr>
+                        </tbody>
+
+                      </table>
+            </div>
+
+
+      </div></div></section>
+
+
+      
 
 
 
@@ -169,6 +226,8 @@
 
 </div><!--end container fluid-->
 <script   src="https://code.jquery.com/jquery-2.2.2.min.js"   integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="   crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="js/zcss.js"></script>
 <script type="text/javascript" src="js/hero-slider.js"></script>

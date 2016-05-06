@@ -18,6 +18,9 @@ h1, h2, h3, h4 {
 p, label, input, button {
   font-family: "Open Sans Condensed", sans-serif; }
 
+a {
+  cursor: pointer; }
+
 code {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 1em;
@@ -200,6 +203,36 @@ section.module.parallax-1 {
   #services1 .pic-two:hover, #services2 .pic-two:hover {
     box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.4); }
 
+#services2 {
+  background-color: #fff; }
+
+#rig-quick-pic {
+  min-height: 275px;
+  height: 100%;
+  width: 100%;
+  background: #5C5D5E; }
+  #rig-quick-pic .overlay {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 20px; }
+  #rig-quick-pic img {
+    width: 100%;
+    height: 225px;
+    box-shadow: 1px -1px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.25s; }
+  #rig-quick-pic h4 {
+    width: 80%;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+  #rig-quick-pic img:hover {
+    box-shadow: 1px 1px 14px #000; }
+
 #hero-parallax1, #hero-parallax2 {
   min-height: 350px;
   height: 350px;
@@ -219,6 +252,50 @@ section.module.parallax-2 {
 section.module.parallax-3 {
   background-image: url("../assets/images/rig/coil-on-top.jpg");
   background-position: cover; }
+
+/* RIG POPUP */
+#rigs-popup {
+  /*display: none;*/
+  position: relative;
+  bottom: 0;
+  display: table;
+  width: 700px;
+  height: 650px;
+  padding: 0;
+  margin: 0;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.25s; }
+  #rigs-popup .rig-card {
+    height: 150px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    transition: 0.25s; }
+    #rigs-popup .rig-card img {
+      float: left;
+      width: 150px;
+      height: 150px;
+      padding: 0;
+      margin: 0; }
+    #rigs-popup .rig-card .text-box {
+      float: left;
+      color: #000;
+      width: 400px; }
+      #rigs-popup .rig-card .text-box h4.header {
+        text-align: left;
+        font-size: 1.5em;
+        width: 100%; }
+      #rigs-popup .rig-card .text-box h4.text {
+        font-size: 1.2em;
+        text-align: left; }
+      #rigs-popup .rig-card .text-box h4.learn-more {
+        padding: 14px;
+        font-size: 1.5em;
+        text-align: right; }
+  #rigs-popup .rig-card:hover {
+    box-shadow: 1px -1px 4px rgba(92, 93, 94, 0.7);
+    background-color: #D3D5D9; }
 
 #about {
   height: 100%;
@@ -256,17 +333,31 @@ section.module.parallax-3 {
       content: "|";
       padding: 10px; }
 
-#rig {
-  min-height: 650px;
+#rig114, #rig168 {
+  display: table;
+  height: 830px;
+  min-height: 830px;
   width: 100%;
-  box-shadow: 7px 0 9px -4px rgba(0, 0, 0, 0.1), -7px 0 7px -4px rgba(0, 0, 0, 0.1); }
-  #rig .overlay {
-    min-height: 100%;
+  background-color: #D3D5D9;
+  padding: 3em 0 3em 0; }
+  #rig114 img, #rig168 img {
     width: 100%;
-    min-width: 100%;
-    margin: 0;
-    position: relative;
-    /*set this to relative for triangles*/ }
+    height: 100%; }
+  #rig114 table, #rig168 table {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 450px;
+    padding: 0;
+    font-size: 18px;
+    color: #000; }
+    #rig114 table thead, #rig168 table thead {
+      padding: 20px;
+      background-color: #2A4890; }
+    #rig114 table thead th, #rig168 table thead th {
+      padding: 4px 0 4px 10px; }
+    #rig114 table tbody td, #rig168 table tbody td {
+      padding: 4px 30px 4px 10px; }
 
 /* ------------------------------------------------ */
 /*		NAVIGATION NAV#								*/
@@ -275,48 +366,39 @@ nav {
   width: 100%;
   height: 100%;
   text-align: center; }
-
-nav .logo {
-  width: 64px;
-  height: 64px; }
-
-nav .nav-title {
-  display: inline-block;
-  width: 50%;
-  margin: 0;
-  color: #fff;
-  font-size: 1.1em;
-  line-height: 50px;
-  vertical-align: middle;
-  text-align: center; }
-
-nav .nav-title h1 {
-  /*Override h1 so it centers vertically*/
-  margin: 0;
-  padding: 0; }
-
-nav .nav-links {
-  display: inline-block;
-  margin: 0;
-  float: right; }
-
-nav a {
-  display: inline-block;
-  font-size: 0.8em;
-  line-height: 30px;
-  vertical-align: middle;
-  color: #fff;
-  padding: 0 10em 0 0;
-  transition: 0.5s;
-  text-align: center; }
-
-nav a:hover {
-  color: #ccc;
-  text-shadow: 0.1px 0.1px 1px rgba(0, 0, 0, 0.3); }
-
-/* Clean up nav links */
-nav a, nav a:active, nav a:selected {
-  text-decoration: none; }
+  nav .logo {
+    width: 64px;
+    height: 64px; }
+  nav .nav-title {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center; }
+    nav .nav-title h1 {
+      margin: 0;
+      padding: 0; }
+  nav .nav-links {
+    display: inline-block;
+    margin: 0;
+    float: right; }
+  nav a {
+    display: inline-block;
+    font-size: 0.8em;
+    line-height: 30px;
+    vertical-align: middle;
+    color: #fff;
+    padding: 0 10em 0 0;
+    transition: 0.5s;
+    text-align: center; }
+  nav a:hover {
+    color: #ccc;
+    text-shadow: 0.1px 0.1px 1px rgba(0, 0, 0, 0.3); }
+  nav a:active, nav a:selected {
+    text-decoration: none; }
 
 /*------------------------------------------------------*/
 /*				#SECTION#								*/
@@ -681,19 +763,6 @@ section.module.parallax:last-child {
   margin-left: auto;
   margin-right: auto;
   text-align: center; }
-
-table {
-  font-size: 18px;
-  color: #000; }
-  table thead {
-    padding: 20px;
-    background-color: #2A4890; }
-  table thead th {
-    padding: 4px 0 4px 10px; }
-  table tbody {
-    border: 1px solid #000; }
-    table tbody td {
-      padding: 4px 30px 4px 10px; }
 
 /* ------------------------------------------------ */
 /*		Media Queries								*/

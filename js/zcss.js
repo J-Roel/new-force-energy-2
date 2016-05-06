@@ -107,9 +107,8 @@ $( document ).ready(function() {
 		$('#drawer').slideToggle(300);
 	});
     $('.drawer-side a').click(function(){
-    	console.log("Hello");
-		$('#drawer-button').removeClass( "active" );
-		$('#drawer').slideToggle(300);    	
+  		$('#drawer-button').removeClass( "active" );
+  		$('#drawer').slideToggle(300);    	
     });
 
     //Mouse over for arrow jump
@@ -120,6 +119,19 @@ $( document ).ready(function() {
     });
 
 
+
+    //=============================================================
+    //RIG SELECTION POPUP
+    $('#rigs-click').click(function(){
+        
+        $('#rigs-popup').slideToggle(300);
+        // $('#drawer-button').css("display", "none" );
+    });
+  
+    $('#rigs-popup').mouseleave( function(){
+        $('#rigs-popup').slideToggle(300);
+        // $('#drawer-button').css("display", "block" );
+    });
 
 
 	//SCROLL FUNCTION TO MAKE HEADER DISAPPEAR
