@@ -120,8 +120,12 @@ $( document ).ready(function() {
 
 
 
+
     //=============================================================
     //RIG SELECTION POPUP
+    //First set to not display, should be set in CSS, but make sure here
+    $('#rigs-popup').css('display', 'none');
+    
     $('#rigs-click').click(function(){
         
         $('#rigs-popup').slideToggle(300);

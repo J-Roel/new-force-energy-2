@@ -1,5 +1,6 @@
 /*FONT FAMILIES*/
 /*DEFAULT COLORS*/
+/*#2A4890;*/
 /*Should be slightly darker than primary color*/
 /*Font Colors*/
 /*HAMBURGER COLORS*/
@@ -39,11 +40,11 @@ html, body {
   margin: 0; }
 
 body {
-  background: #777d87;
-  background: -moz-linear-gradient(top, #777d87 5%, white 84%);
-  background: -webkit-linear-gradient(top, #777d87 5%, white 84%);
-  background: linear-gradient(to bottom, #777d87 5%, white 84%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777d87', endColorstr='#ffffff',GradientType=0 ); }
+  background: #7a8893;
+  background: -moz-linear-gradient(top, #7a8893 5%, #070b17 57%, #b1a78e 99%);
+  background: -webkit-linear-gradient(top, #7a8893 5%, #070b17 57%, #b1a78e 99%);
+  background: linear-gradient(to bottom, #7a8893 5%, #070b17 57%, #b1a78e 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a8893', endColorstr='#b1a78e',GradientType=0 ); }
 
 header {
   width: 100%;
@@ -64,7 +65,7 @@ header {
     z-index: 200; }
 
 footer {
-  background-color: gray;
+  background-color: #3D3B3C;
   height: 40vh;
   min-height: 40vh;
   width: 100vw;
@@ -72,14 +73,14 @@ footer {
   footer img {
     width: 100%; }
   footer a {
-    font-color: #1B1C1F; }
+    font-color: #000; }
 
 /*-----------------------
 		HERO SLIDER
 -------------------------*/
 /* Welcome */
 .cd-hero-slider li:first-of-type {
-  background-color: #2A4890; }
+  background-color: #3D3B3C; }
 
 cd-hero-slider .cd-btn {
   background-color: rgba(96, 139, 15, 0.9); }
@@ -138,7 +139,7 @@ cd-hero-slider .cd-btn {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 30px;
     padding-left: 10%; }
@@ -151,7 +152,8 @@ section.module.parallax-1 {
   min-height: 450px;
   height: 100%;
   width: 100%;
-  background: #D3D5D9; }
+  background: #3D3B3C;
+  color: #F8E8CE; }
   #services1 .overlay, #services2 .overlay {
     min-height: 100%;
     width: 100%;
@@ -181,9 +183,7 @@ section.module.parallax-1 {
     height: 600px;
     top: -70px;
     left: 0;
-    z-index: 2; }
-  #services1 .pic-one:hover, #services2 .pic-one:hover {
-    /*outline: 8px solid rgba(0,0,0,0.4);*/ }
+    z-index: 1; }
   #services1 .pic-two, #services2 .pic-two {
     background: linear-gradient(rgba(119, 125, 135, 0.4), rgba(119, 125, 135, 0.4)), url("../assets/images/rig/coil-on-top.jpg") no-repeat center center;
     -webkit-background-size: cover;
@@ -200,17 +200,16 @@ section.module.parallax-1 {
     z-index: 2;
     box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.4);
     transition: 0.5s; }
-  #services1 .pic-two:hover, #services2 .pic-two:hover {
-    box-shadow: 1px 1px 14px 2px rgba(0, 0, 0, 0.4); }
 
 #services2 {
-  background-color: #fff; }
+  background-color: #3D3B3C;
+  color: #F8E8CE; }
 
 #rig-quick-pic {
   min-height: 275px;
   height: 100%;
   width: 100%;
-  background: #5C5D5E; }
+  background: #fff; }
   #rig-quick-pic .overlay {
     position: relative;
     min-height: 100%;
@@ -255,20 +254,23 @@ section.module.parallax-3 {
 
 /* RIG POPUP */
 #rigs-popup {
-  /*display: none;*/
+  display: none;
   position: relative;
   bottom: 0;
   display: table;
-  width: 700px;
-  height: 650px;
+  width: 550px;
+  max-width: inherit;
   padding: 0;
   margin: 0;
-  z-index: 20;
+  z-index: 10;
   background-color: rgba(255, 255, 255, 0.9);
   transition: 0.25s; }
+  #rigs-popup a {
+    padding: 0;
+    margin: 0; }
   #rigs-popup .rig-card {
     height: 150px;
-    width: 100%;
+    width: 550px;
     padding: 0;
     margin: 0;
     transition: 0.25s; }
@@ -301,13 +303,20 @@ section.module.parallax-3 {
   height: 100%;
   width: 100%;
   box-shadow: 7px 0 9px -4px rgba(0, 0, 0, 0.1), -7px 0 7px -4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 5em; }
+  margin-bottom: 5em;
+  color: #F8E8CE;
+  /*$footerColor;*/ }
   #about .overlay {
     height: inherit;
     width: 100%;
     margin: 0;
     position: relative;
-    background-color: #D3D5D9; }
+    background-color: #3D3B3C; }
+  #about a {
+    color: #F8E8CE;
+    transition: 0.25s; }
+  #about a:hover {
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.9); }
   #about img {
     width: 100%;
     padding: 2em;
@@ -390,13 +399,13 @@ nav {
     font-size: 0.8em;
     line-height: 30px;
     vertical-align: middle;
-    color: #fff;
+    color: #F8E8CE;
     padding: 0 10em 0 0;
     transition: 0.5s;
     text-align: center; }
   nav a:hover {
     color: #ccc;
-    text-shadow: 0.1px 0.1px 1px rgba(0, 0, 0, 0.3); }
+    text-shadow: 0.1px 0.1px 1px rgba(255, 255, 255, 0.5); }
   nav a:active, nav a:selected {
     text-decoration: none; }
 
@@ -537,7 +546,7 @@ nav {
   line-height: 70px;
   vertical-align: middle;
   text-align: center;
-  background-color: #2A4890;
+  background-color: #3D3B3C;
   border: 2px solid #0a175b;
   color: #fff;
   margin-left: 1px;
