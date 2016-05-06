@@ -67,9 +67,9 @@ html, body{
 }
 body {
 	background: rgb(122,136,147);
-background: -moz-linear-gradient(top,  rgba(122,136,147,1) 5%, rgba(7,11,23,1) 57%, rgba(177,167,142,1) 99%);
-background: -webkit-linear-gradient(top,  rgba(122,136,147,1) 5%,rgba(7,11,23,1) 57%,rgba(177,167,142,1) 99%);
-background: linear-gradient(to bottom,  rgba(122,136,147,1) 5%,rgba(7,11,23,1) 57%,rgba(177,167,142,1) 99%);
+background: -moz-linear-gradient(top,  rgba(122,136,147,1) 5%, rgba(7,11,23,1) 30%, rgba(7,11,23,1) 80%, rgba(177,167,142,1) 99%);
+background: -webkit-linear-gradient(top,  rgba(122,136,147,1) 5%,rgba(7,11,23,1) 30%,rgba(7,11,23,1) 80%,rgba(177,167,142,1) 99%);
+background: linear-gradient(to bottom,  rgba(122,136,147,1) 5%,rgba(7,11,23,1) 30%,rgba(7,11,23,1) 80%,rgba(177,167,142,1) 99%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a8893', endColorstr='#b1a78e',GradientType=0 );
 
 }
@@ -142,7 +142,6 @@ cd-hero-slider .cd-btn{
 /*-----------------------
 		#SECTIONS#
 -------------------------*/
-
 
 /* ---------------EVENTS----------------*/
 #page-header{
