@@ -131,14 +131,15 @@ cd-hero-slider .cd-btn {
     width: 400px;
     height: 300px;
     top: 5em;
-    left: 30%;
+    left: 20%;
     padding: 0;
     background-image: url("../assets/images/nf-logo.png");
     background-repeat: none;
     background-size: cover; }
-  #top .h2 {
-    font-size: 2em;
-    color: #000; }
+  #top h2 {
+    padding: 50% 0 0 50%;
+    font-size: 3em;
+    color: #fff; }
   #top .nav-container {
     position: absolute;
     top: 0;
@@ -253,10 +254,6 @@ section.module.parallax-2 {
 section.module.parallax-3 {
   background-image: url("../assets/images/rig/coil-on-top.jpg"); }
 
-/* RIG 114 PAGE */
-section.module.parallax-4 {
-  background-image: url("../assets/images/rig/rig114-1.jpg"); }
-
 /* RIG POPUP */
 #rigs-popup, #services-popup {
   display: none;
@@ -365,15 +362,17 @@ section.module.parallax-4 {
   min-height: 830px;
   width: 100%;
   background-color: #D3D5D9;
-  padding: 3em 0 3em 0; }
+  padding: 5em 1em 3em 1em; }
   #rig114 img, #rig168 img {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    margin: 0;
+    padding: 0; }
   #rig114 table, #rig168 table {
     display: block;
     margin: 0 auto;
     width: 100%;
-    height: 450px;
+    /*height: 450px;*/
     padding: 0;
     font-size: 18px;
     color: #000; }
@@ -384,6 +383,10 @@ section.module.parallax-4 {
       padding: 4px 0 4px 10px; }
     #rig114 table tbody td, #rig168 table tbody td {
       padding: 4px 30px 4px 10px; }
+
+/* RIG 114 PAGE HERO IMAGE */
+section.module.parallax-4 {
+  background-image: url("../assets/images/rig/114-wide.jpg"); }
 
 /* ------------------------------------------------ */
 /*		NAVIGATION NAV#								*/
