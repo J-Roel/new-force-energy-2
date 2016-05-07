@@ -7,13 +7,15 @@ $primaryColor: #3D3B3C;/*#2A4890;*/
 $primaryColorRGBA: rgba(15,34,139,0.5);
 $contrastColor:#1B1C1F;
 $navColor: #F8E8CE;
+$navBackColor: rgba(0,0,0,0.2);
 
-$services2Color: #3D3B3C;
-$services1Color: #3D3B3C;
+$services2Color: #2A4890;
+$services1Color: #2A4890;
+$colorOverPictures: rgba(42,72,144,0.4);
 
 $socialbuttonOutline: #0a175b;/*Should be slightly darker than primary color*/
 $headerColor: transparent;
-$footerBackColor: #3D3B3C;
+$footerBackColor: #2A4890;
 $footerColor: #000;
 
 /*Font Colors*/
@@ -66,11 +68,11 @@ html, body{
 	margin:0;
 }
 body {
-	background: rgb(122,136,147);
-background: -moz-linear-gradient(top,  rgba(122,136,147,1) 5%, rgba(7,11,23,1) 30%, rgba(7,11,23,1) 80%, rgba(177,167,142,1) 99%);
-background: -webkit-linear-gradient(top,  rgba(122,136,147,1) 5%,rgba(7,11,23,1) 30%,rgba(7,11,23,1) 80%,rgba(177,167,142,1) 99%);
-background: linear-gradient(to bottom,  rgba(122,136,147,1) 5%,rgba(7,11,23,1) 30%,rgba(7,11,23,1) 80%,rgba(177,167,142,1) 99%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a8893', endColorstr='#b1a78e',GradientType=0 );
+	background: rgb(119,125,135);
+background: -moz-linear-gradient(top,  rgba(119,125,135,1) 5%, rgba(248,232,206,1) 84%);
+background: -webkit-linear-gradient(top,  rgba(119,125,135,1) 5%,rgba(248,232,206,1) 84%);
+background: linear-gradient(to bottom,  rgba(119,125,135,1) 5%,rgba(248,232,206,1) 84%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777d87', endColorstr='#f8e8ce',GradientType=0 );
 
 }
 header {
@@ -114,6 +116,7 @@ footer{
 }
 
 
+
 /*-----------------------
 		HERO SLIDER
 -------------------------*/
@@ -135,8 +138,6 @@ cd-hero-slider .cd-btn{
 }
 .cd-hero-slider li:nth-of-type(3) p, .cd-hero-slider li:nth-of-type(3) h2  {
 }
-
-
 
 
 /*-----------------------
@@ -177,29 +178,31 @@ cd-hero-slider .cd-btn{
 		position: relative; /*set this to relative for triangles*/	
 	}
 	.nfc-logo{ /*New Force Energy Logo*/
-		display: block;
+		position: absolute;
 		width: 400px;
 		height: 300px;
-		margin: 5% 0 0 12%;
+		top: 5em;
+		left: 30%;
 		padding: 0;
 		background-image: url("../assets/images/nf-logo.png");
 		background-repeat: none;
 		background-size: cover;
 	}
+	.h2{
+		font-size: 2em;
+		color: #000;
+	}
 	.nav-container{
 		position: absolute;
 		top:0;
 		left:0;
-		background-color: rgba(0,0,0,0.4);
+		background-color: $navBackColor;
 		width:100%;
 		height: 30px;
 		padding-left: 10%;
 	}
 }
-section.module.parallax-1 {
-	background-image: url("../assets/images/rig/main-wide.jpg");
-	background-position: cover;
-}
+
 
 #services1, #services2{
 	min-height: 450px;
@@ -226,7 +229,7 @@ section.module.parallax-1 {
 		}
 	}
 	.pic-one{
-	  background: linear-gradient( rgba(119, 125, 135, 0.4), rgba(119, 125, 135, 0.4) ),
+	  background: linear-gradient( $colorOverPictures, $colorOverPictures ),
 	    url("../assets/images/rig/standing-tall.jpg") no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -243,7 +246,7 @@ section.module.parallax-1 {
 		z-index: 1;
 	}
 	.pic-two{
-		background: linear-gradient( rgba(119, 125, 135, 0.4), rgba(119, 125, 135, 0.4) ),
+		background: linear-gradient( $colorOverPictures, $colorOverPictures ),
 	    url("../assets/images/rig/coil-on-top.jpg") no-repeat center center;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -251,7 +254,6 @@ section.module.parallax-1 {
 		background-size: cover;
 		filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
 	    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
-
 		position: absolute;
 		width: 500px;
 		height: 600px;
@@ -290,7 +292,7 @@ section.module.parallax-1 {
 	h4{
 		width: 80%;
 		color: #000;
-		background-color: rgba(255,255,255,0.2);
+		background-color: $colorOverPictures;
 		position: absolute;
 		top: 20px;
 		left:20px;
@@ -313,30 +315,32 @@ section.module.parallax-1 {
 		background-color: rgba(119, 125, 135, 0.7);
 	}
 }
+section.module.parallax-1 {
+	background-image: url("../assets/images/rig/main-wide.jpg");
+}
 section.module.parallax-2 {
 	background-image: url("../assets/images/rig/standing-tall.jpg");
-	background-position: cover;
 }
 section.module.parallax-3 {
 	background-image: url("../assets/images/rig/coil-on-top.jpg");
-	background-position: cover;
 }
 
+/* RIG 114 PAGE */
+section.module.parallax-4{
+	background-image: url("../assets/images/rig/rig114-1.jpg");
+}
 
 /* RIG POPUP */
-#rigs-popup{
+#rigs-popup, #services-popup{
 	display: none;
 	position: relative;
-	bottom:0;
-	display: table;
-	
+	bottom:-10px;
 	width: 550px;
 	max-width: inherit;
 	padding:0;
 	margin:0;
-	z-index: 10;
-	background-color: rgba(255,255,255,0.9);
-	transition: 0.25s;
+	z-index: 100;
+	background-color: #F8E8CE;
 	a{
 			padding: 0;
 			margin: 0;
@@ -347,7 +351,6 @@ section.module.parallax-3 {
 		width: 550px;
 		padding:0;
 		margin:0;
-		transition: 0.25s;
 		img{
 			float:left;
 			width: 150px;
@@ -376,19 +379,31 @@ section.module.parallax-3 {
 		}
 	}
 	.rig-card:hover{
-		box-shadow: 1px -1px 4px rgba(92,93,94,0.7);
-		background-color:#D3D5D9;
+		text-shadow: 1px 1px 1px rgba(42,72,144,0.4);
+		outline: 4px solid rgba(42,72,144,0.4);
+	}
+	.arrow-up {
+		position: absolute;
+		top:-15px;
+		left: 180px;
+		width: 0; 
+		height: 0; 
+		border-left: 15px solid transparent;
+		border-right: 15px solid transparent;
+		border-bottom: 15px solid #F8E8CE;
 	}
 
 }
-
+#services-popup{
+	left: 200px;
+}
 
 #about{
 	height: 100%;
 	width: 100%;
 	box-shadow: 7px 0 9px -4px rgba(0, 0, 0, 0.1), -7px 0 7px -4px rgba(0, 0, 0, 0.1);
 	margin-bottom: 5em;
-	color: $primaryFontColor;/*$footerColor;*/
+	color: $primaryFontColor;
 	.overlay{
 		height: inherit;
 		width: 100%;
@@ -421,6 +436,11 @@ section.module.parallax-3 {
 		text-align: center;
 		h3{
 			padding: 2em 0 2em 0;
+		}
+		h3:before, h3:after{
+			font-style: normal;
+			padding: 10px;
+			content: "|"
 		}
 		a{
 			display: inline-block;
@@ -925,9 +945,6 @@ nav {
 
 
 
-
-
-
 /* ============================================================
   SECTION PARALLAX
 ============================================================ */
@@ -965,6 +982,11 @@ section.module.parallax:last-child {
 }
 
 
+/* ------------------------------------------------ */
+/*		DECO CLASSES							*/
+/* ------------------------------------------------ */
+
+
 
 
 
@@ -974,10 +996,6 @@ section.module.parallax:last-child {
 /* ------------------------------------------------ */
 /*		Media Queries								*/
 /* ------------------------------------------------ */
-
-
-
-
 /* iPhone 6 Portrait */
 @media only screen 
   and (min-device-width: 375px) 

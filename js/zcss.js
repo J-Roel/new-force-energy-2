@@ -13,85 +13,8 @@ $(function() {
         });
     });
 
-  setTimeout( function(){
-    $('#main-menu').attr('checked','true');
-  },3000);
 
 
-
-// FOR OUR SALES PITCH
-var btCount = 0;
-var fade = true;
-setInterval( function(){
-
-  switch(btCount){
-    case 0:
-      if(fade === true){
-        $('.bannerText').text("Safety Oriented");
-        $('.bannerText').fadeIn(300);
-        fade = false;
-      } else {
-        $('.bannerText').fadeOut(300);
-        fade = true;
-        btCount++;
-      }
-      break;
-      
-    case 1:
-      if(fade === true){
-        $('.bannerText').text("Integrity");
-        $('.bannerText').fadeIn('slow');
-        fade = false;
-      } else {
-        $('.bannerText').fadeOut(300);
-        fade = true;
-        btCount++;
-      }
-      break;
-    case 2:
-     if(fade === true){
-        $('.bannerText').text("Environmentally Friendly");
-        $('.bannerText').fadeIn(300);
-        fade = false;
-      } else {
-        $('.bannerText').fadeOut(300);
-        fade = true;
-        btCount++;
-      }
-      break;
-    case 3:
-      if(fade === true){
-        $('.bannerText').text("Cutting Edge Ingenuity")
-        $('.bannerText').fadeIn(300);
-        fade = false;
-      } else {
-        $('.bannerText').fadeOut(300);
-        fade = true;
-        btCount++;
-      }
-      break;
-    case 4:
-    if(fade === true){
-        $('.bannerText').text("Environmentally Friendly")
-        $('.bannerText').fadeIn(300);
-        fade = false;
-      } else {
-        $('.bannerText').fadeOut(300);
-        fade = true;
-        btCount++;
-      }
-      break;
-    default:
-      $('.bannerText').text("Small Foot Print");
-  }
-
-  
-  
-  if(btCount > 4){
-    btCount = 0;
-  }
-
-},3000);
 
 
 $( document ).ready(function() {
@@ -122,19 +45,22 @@ $( document ).ready(function() {
 
 
     //=============================================================
-    //RIG SELECTION POPUP
-    //First set to not display, should be set in CSS, but make sure here
-    $('#rigs-popup').css('display', 'none');
-    
-    $('#rigs-click').click(function(){
-        
-        $('#rigs-popup').slideToggle(300);
-        // $('#drawer-button').css("display", "none" );
+    //NAVIGATION POPUP
+
+    $('#rigs-click').mouseover(function(){ 
+        $('#rigs-popup').show(100);
+        $('#services-popup').hide(100);
     });
-  
     $('#rigs-popup').mouseleave( function(){
-        $('#rigs-popup').slideToggle(300);
-        // $('#drawer-button').css("display", "block" );
+        $('#rigs-popup').hide(300);
+    });
+
+    $('#services-click').mouseover(function(){ 
+        $('#rigs-popup').hide(100);
+        $('#services-popup').show(100);
+    });
+    $('#services-popup').mouseleave( function(){
+        $('#services-popup').hide(300);
     });
 
 

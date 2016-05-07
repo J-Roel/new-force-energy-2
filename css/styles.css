@@ -40,11 +40,11 @@ html, body {
   margin: 0; }
 
 body {
-  background: #7a8893;
-  background: -moz-linear-gradient(top, #7a8893 5%, #070b17 30%, #070b17 80%, #b1a78e 99%);
-  background: -webkit-linear-gradient(top, #7a8893 5%, #070b17 30%, #070b17 80%, #b1a78e 99%);
-  background: linear-gradient(to bottom, #7a8893 5%, #070b17 30%, #070b17 80%, #b1a78e 99%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a8893', endColorstr='#b1a78e',GradientType=0 ); }
+  background: #777d87;
+  background: -moz-linear-gradient(top, #777d87 5%, #f8e8ce 84%);
+  background: -webkit-linear-gradient(top, #777d87 5%, #f8e8ce 84%);
+  background: linear-gradient(to bottom, #777d87 5%, #f8e8ce 84%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777d87', endColorstr='#f8e8ce',GradientType=0 ); }
 
 header {
   width: 100%;
@@ -65,7 +65,7 @@ header {
     z-index: 200; }
 
 footer {
-  background-color: #3D3B3C;
+  background-color: #2A4890;
   height: 40vh;
   min-height: 40vh;
   width: 100vw;
@@ -127,32 +127,32 @@ cd-hero-slider .cd-btn {
     /*set this to relative for triangles*/ }
   #top .nfc-logo {
     /*New Force Energy Logo*/
-    display: block;
+    position: absolute;
     width: 400px;
     height: 300px;
-    margin: 5% 0 0 12%;
+    top: 5em;
+    left: 30%;
     padding: 0;
     background-image: url("../assets/images/nf-logo.png");
     background-repeat: none;
     background-size: cover; }
+  #top .h2 {
+    font-size: 2em;
+    color: #000; }
   #top .nav-container {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 30px;
     padding-left: 10%; }
-
-section.module.parallax-1 {
-  background-image: url("../assets/images/rig/main-wide.jpg");
-  background-position: cover; }
 
 #services1, #services2 {
   min-height: 450px;
   height: 100%;
   width: 100%;
-  background: #3D3B3C;
+  background: #2A4890;
   color: #F8E8CE; }
   #services1 .overlay, #services2 .overlay {
     min-height: 100%;
@@ -170,7 +170,7 @@ section.module.parallax-1 {
       font-style: normal;
       content: "|"; }
   #services1 .pic-one, #services2 .pic-one {
-    background: linear-gradient(rgba(119, 125, 135, 0.4), rgba(119, 125, 135, 0.4)), url("../assets/images/rig/standing-tall.jpg") no-repeat center center;
+    background: linear-gradient(rgba(42, 72, 144, 0.4), rgba(42, 72, 144, 0.4)), url("../assets/images/rig/standing-tall.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -185,7 +185,7 @@ section.module.parallax-1 {
     left: 0;
     z-index: 1; }
   #services1 .pic-two, #services2 .pic-two {
-    background: linear-gradient(rgba(119, 125, 135, 0.4), rgba(119, 125, 135, 0.4)), url("../assets/images/rig/coil-on-top.jpg") no-repeat center center;
+    background: linear-gradient(rgba(42, 72, 144, 0.4), rgba(42, 72, 144, 0.4)), url("../assets/images/rig/coil-on-top.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -202,7 +202,7 @@ section.module.parallax-1 {
     transition: 0.5s; }
 
 #services2 {
-  background-color: #3D3B3C;
+  background-color: #2A4890;
   color: #F8E8CE; }
 
 #rig-quick-pic {
@@ -225,7 +225,7 @@ section.module.parallax-1 {
   #rig-quick-pic h4 {
     width: 80%;
     color: #000;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(42, 72, 144, 0.4);
     position: absolute;
     top: 20px;
     left: 20px; }
@@ -244,74 +244,87 @@ section.module.parallax-1 {
     position: relative;
     background-color: rgba(119, 125, 135, 0.7); }
 
+section.module.parallax-1 {
+  background-image: url("../assets/images/rig/main-wide.jpg"); }
+
 section.module.parallax-2 {
-  background-image: url("../assets/images/rig/standing-tall.jpg");
-  background-position: cover; }
+  background-image: url("../assets/images/rig/standing-tall.jpg"); }
 
 section.module.parallax-3 {
-  background-image: url("../assets/images/rig/coil-on-top.jpg");
-  background-position: cover; }
+  background-image: url("../assets/images/rig/coil-on-top.jpg"); }
+
+/* RIG 114 PAGE */
+section.module.parallax-4 {
+  background-image: url("../assets/images/rig/rig114-1.jpg"); }
 
 /* RIG POPUP */
-#rigs-popup {
+#rigs-popup, #services-popup {
   display: none;
   position: relative;
-  bottom: 0;
-  display: table;
+  bottom: -10px;
   width: 550px;
   max-width: inherit;
   padding: 0;
   margin: 0;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.9);
-  transition: 0.25s; }
-  #rigs-popup a {
+  z-index: 100;
+  background-color: #F8E8CE; }
+  #rigs-popup a, #services-popup a {
     padding: 0;
     margin: 0; }
-  #rigs-popup .rig-card {
+  #rigs-popup .rig-card, #services-popup .rig-card {
     height: 150px;
     width: 550px;
     padding: 0;
-    margin: 0;
-    transition: 0.25s; }
-    #rigs-popup .rig-card img {
+    margin: 0; }
+    #rigs-popup .rig-card img, #services-popup .rig-card img {
       float: left;
       width: 150px;
       height: 150px;
       padding: 0;
       margin: 0; }
-    #rigs-popup .rig-card .text-box {
+    #rigs-popup .rig-card .text-box, #services-popup .rig-card .text-box {
       float: left;
       color: #000;
       width: 400px; }
-      #rigs-popup .rig-card .text-box h4.header {
+      #rigs-popup .rig-card .text-box h4.header, #services-popup .rig-card .text-box h4.header {
         text-align: left;
         font-size: 1.5em;
         width: 100%; }
-      #rigs-popup .rig-card .text-box h4.text {
+      #rigs-popup .rig-card .text-box h4.text, #services-popup .rig-card .text-box h4.text {
         font-size: 1.2em;
         text-align: left; }
-      #rigs-popup .rig-card .text-box h4.learn-more {
+      #rigs-popup .rig-card .text-box h4.learn-more, #services-popup .rig-card .text-box h4.learn-more {
         padding: 14px;
         font-size: 1.5em;
         text-align: right; }
-  #rigs-popup .rig-card:hover {
-    box-shadow: 1px -1px 4px rgba(92, 93, 94, 0.7);
-    background-color: #D3D5D9; }
+  #rigs-popup .rig-card:hover, #services-popup .rig-card:hover {
+    text-shadow: 1px 1px 1px rgba(42, 72, 144, 0.4);
+    outline: 4px solid rgba(42, 72, 144, 0.4); }
+  #rigs-popup .arrow-up, #services-popup .arrow-up {
+    position: absolute;
+    top: -15px;
+    left: 180px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #F8E8CE; }
+
+#services-popup {
+  left: 200px; }
 
 #about {
   height: 100%;
   width: 100%;
   box-shadow: 7px 0 9px -4px rgba(0, 0, 0, 0.1), -7px 0 7px -4px rgba(0, 0, 0, 0.1);
   margin-bottom: 5em;
-  color: #F8E8CE;
-  /*$footerColor;*/ }
+  color: #F8E8CE; }
   #about .overlay {
     height: inherit;
     width: 100%;
     margin: 0;
     position: relative;
-    background-color: #3D3B3C; }
+    background-color: #2A4890; }
   #about a {
     color: #F8E8CE;
     transition: 0.25s; }
@@ -331,6 +344,10 @@ section.module.parallax-3 {
     text-align: center; }
     #about .text-box h3 {
       padding: 2em 0 2em 0; }
+    #about .text-box h3:before, #about .text-box h3:after {
+      font-style: normal;
+      padding: 10px;
+      content: "|"; }
     #about .text-box a {
       display: inline-block; }
     #about .text-box h4.link {
@@ -773,6 +790,9 @@ section.module.parallax:last-child {
   margin-right: auto;
   text-align: center; }
 
+/* ------------------------------------------------ */
+/*		DECO CLASSES							*/
+/* ------------------------------------------------ */
 /* ------------------------------------------------ */
 /*		Media Queries								*/
 /* ------------------------------------------------ */
