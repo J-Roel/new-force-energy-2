@@ -12,7 +12,7 @@
 /*--------------------------*/
 h1, h2, h3, h4 {
   font-family: "Montserrat", sans-serif;
-  font-style: italic;
+  /*font-style: italic;*/
   padding: 10px;
   margin: 0; }
 
@@ -65,15 +65,7 @@ header {
     z-index: 200; }
 
 footer {
-  background-color: #2A4890;
-  height: 40vh;
-  min-height: 40vh;
-  width: 100vw;
-  min-width: 100%; }
-  footer img {
-    width: 100%; }
-  footer a {
-    font-color: #000; }
+  background-color: #2A4890; }
 
 /*-----------------------
 		HERO SLIDER
@@ -137,9 +129,12 @@ cd-hero-slider .cd-btn {
     background-repeat: none;
     background-size: cover; }
   #top h2 {
-    padding: 50% 0 0 50%;
+    position: absolute;
+    right: 20%;
+    top: 200px;
     font-size: 3em;
-    color: #fff; }
+    color: #fff;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.7); }
   #top .nav-container {
     position: absolute;
     top: 0;
@@ -259,56 +254,58 @@ section.module.parallax-3 {
   display: none;
   position: relative;
   bottom: -10px;
-  width: 550px;
-  max-width: inherit;
+  left: 19%;
+  width: 150px;
   padding: 0;
   margin: 0;
   z-index: 100;
-  background-color: #F8E8CE; }
+  background-color: #fff;
+  border-radius: 7px; }
   #rigs-popup a, #services-popup a {
     padding: 0;
-    margin: 0; }
-  #rigs-popup .rig-card, #services-popup .rig-card {
-    height: 150px;
-    width: 550px;
-    padding: 0;
-    margin: 0; }
-    #rigs-popup .rig-card img, #services-popup .rig-card img {
-      float: left;
-      width: 150px;
-      height: 150px;
-      padding: 0;
-      margin: 0; }
-    #rigs-popup .rig-card .text-box, #services-popup .rig-card .text-box {
-      float: left;
+    margin: 0;
+    width: 100%;
+    border: 5px solid #fff; }
+    #rigs-popup a h4, #services-popup a h4 {
       color: #000;
-      width: 400px; }
-      #rigs-popup .rig-card .text-box h4.header, #services-popup .rig-card .text-box h4.header {
-        text-align: left;
-        font-size: 1.5em;
-        width: 100%; }
-      #rigs-popup .rig-card .text-box h4.text, #services-popup .rig-card .text-box h4.text {
-        font-size: 1.2em;
-        text-align: left; }
-      #rigs-popup .rig-card .text-box h4.learn-more, #services-popup .rig-card .text-box h4.learn-more {
-        padding: 14px;
-        font-size: 1.5em;
-        text-align: right; }
-  #rigs-popup .rig-card:hover, #services-popup .rig-card:hover {
-    text-shadow: 1px 1px 1px rgba(42, 72, 144, 0.4);
-    outline: 4px solid rgba(42, 72, 144, 0.4); }
+      font-size: 1.7em;
+      text-align: center;
+      line-height: 50px;
+      text-decoration: none; }
+  #rigs-popup a:hover, #services-popup a:hover {
+    background: #ccc;
+    text-decoration: none; }
   #rigs-popup .arrow-up, #services-popup .arrow-up {
     position: absolute;
     top: -15px;
-    left: 180px;
+    left: 40%;
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 15px solid #F8E8CE; }
+    border-bottom: 15px solid #fff; }
 
 #services-popup {
-  left: 200px; }
+  left: 35%; }
+
+#contact {
+  height: 400px;
+  width: 100%;
+  box-shadow: 7px 0 9px -4px rgba(0, 0, 0, 0.1), -7px 0 7px -4px rgba(0, 0, 0, 0.1);
+  color: #F8E8CE; }
+  #contact .overlay {
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    background-color: #2A4890; }
+  #contact img {
+    width: 100%;
+    border-radius: 100%; }
+  #contact h4 {
+    text-align: center;
+    padding: 40px;
+    margin: 0; }
 
 #about {
   height: 100%;
@@ -356,19 +353,19 @@ section.module.parallax-3 {
       content: "|";
       padding: 10px; }
 
-#rig114, #rig168 {
+#rig114, #rig144, #rig144-2, #rig168 {
   display: table;
   height: 830px;
   min-height: 830px;
   width: 100%;
   background-color: #D3D5D9;
   padding: 5em 1em 3em 1em; }
-  #rig114 img, #rig168 img {
+  #rig114 img, #rig144 img, #rig144-2 img, #rig168 img {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0; }
-  #rig114 table, #rig168 table {
+  #rig114 table, #rig144 table, #rig144-2 table, #rig168 table {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -376,17 +373,33 @@ section.module.parallax-3 {
     padding: 0;
     font-size: 18px;
     color: #000; }
-    #rig114 table thead, #rig168 table thead {
+    #rig114 table thead, #rig144 table thead, #rig144-2 table thead, #rig168 table thead {
       padding: 20px;
       background-color: #2A4890; }
-    #rig114 table thead th, #rig168 table thead th {
+    #rig114 table thead th, #rig144 table thead th, #rig144-2 table thead th, #rig168 table thead th {
       padding: 4px 0 4px 10px; }
-    #rig114 table tbody td, #rig168 table tbody td {
+    #rig114 table tbody td, #rig144 table tbody td, #rig144-2 table tbody td, #rig168 table tbody td {
       padding: 4px 30px 4px 10px; }
 
 /* RIG 114 PAGE HERO IMAGE */
 section.module.parallax-4 {
   background-image: url("../assets/images/rig/114-wide.jpg"); }
+
+/* RIG 144-1 PAGE HERO IMAGE */
+section.module.parallax-5 {
+  background-image: url("../assets/images/rig/rig1441-wide.jpg"); }
+
+/* RIG 144-2 PAGE HERO IMAGE */
+section.module.parallax-6 {
+  background-image: url("../assets/images/rig/144-2-wide.jpg"); }
+
+/* RIG 168 PAGE HERO IMAGE */
+section.module.parallax-7 {
+  background-image: url("../assets/images/rig/main-wide.jpg"); }
+
+/* SERVICES FOR CRANE */
+section.module.parallax-8 {
+  background-image: url("../assets/images/crane/crane-1.jpg"); }
 
 /* ------------------------------------------------ */
 /*		NAVIGATION NAV#								*/
@@ -578,139 +591,6 @@ nav {
   background-color: #0a175b;
   box-shadow: 0.2px 0.2px 2px #000; }
 
-/*--------------------------*/
-/*  EVENTS BLOG */
-/*--------------------------*/
-.event {
-  display: inline-block;
-  width: 100%;
-  padding: 0;
-  margin: 20px;
-  cursor: pointer; }
-
-.event-sml {
-  width: 100%;
-  height: 280px; }
-
-.event-big {
-  width: 100%;
-  height: 200px; }
-
-.event-link {
-  text-decoration: none; }
-
-.event .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.event h4 {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  color: #000;
-  font-size: 1.3em;
-  padding: 0; }
-
-.event h4 title {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  color: #000;
-  font-size: 1.7em;
-  font-weight: bolder;
-  padding: 0; }
-
-.event p {
-  font-family: 'Nunito', sans-serif;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  color: #777;
-  font-size: 1em;
-  padding: 0; }
-
-.event .date-time {
-  width: 100%; }
-
-.event .date {
-  display: block;
-  width: 100%;
-  font-size: 1.2em;
-  color: #000;
-  text-align: left;
-  padding: 0;
-  margin: 0; }
-
-.event .time {
-  display: inline-block;
-  padding: 0 4px 0 0;
-  text-align: right;
-  color: #777;
-  margin: 0;
-  font-size: 0.9em; }
-
-.event .view-event {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  font-size: 14px;
-  text-align: right;
-  background-color: rgba(0, 0, 0, 0.3); }
-
-.event .view-event h4 {
-  padding-right: 20px; }
-
-.event .description {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(24, 135, 119, 0.97);
-  z-index: 1; }
-
-.event .description p {
-  padding: 10px;
-  color: #fff;
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px; }
-
-.event img {
-  height: 100%;
-  width: 100%; }
-
-.event .more-arrow {
-  /*display: block;
-  text-align: right;
-  margin: auto;*/
-  position: absolute;
-  right: 10px;
-  top: 0;
-  font-size: 46px;
-  color: #fff;
-  padding-right: 4%; }
-
-/*--------------------------*/
-/*  LISTS# */
-/*--------------------------*/
-.list-item {
-  padding: 10px;
-  background-size: 200% 100%;
-  background-image: linear-gradient(to right, transparent 50%, rgba(0, 0, 0, 0.1) 100%);
-  transition: 0.2s; }
-
-.archive p {
-  padding: 1em 1em 1em 2em; }
-
-.archive i {
-  padding: 10px; }
-
 /* ------------------------------------------------ */
 /*		EFFECTS										*/
 /* ------------------------------------------------ */
@@ -796,6 +676,9 @@ section.module.parallax:last-child {
 /* ------------------------------------------------ */
 /*		DECO CLASSES							*/
 /* ------------------------------------------------ */
+hr {
+  background-color: 128, 128, 128, 0.7; }
+
 /* ------------------------------------------------ */
 /*		Media Queries								*/
 /* ------------------------------------------------ */
